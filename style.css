@@ -7,7 +7,7 @@
 }
 
 body{
-    background-image: url("/images/background-image.png");
+    background-image: url("/images/mobile-background.png");
     font-family: "Poppins", sans-serif;
     background-repeat: no-repeat;
     height: 100vh;
@@ -29,12 +29,12 @@ body{
     justify-content: space-between;
     align-items: center;
     transition: 0.6s;
-    padding: 20px 80px;
+    padding: 20px 0px;
     z-index: 1000;
 }
 
 nav.sticky{
-  padding: 10px 60px;
+  padding: 10px 0px;
   background: #000;
 }
 
@@ -313,6 +313,10 @@ nav.sticky{
     margin-top: 1em;
   }
 
+  .content-1{
+    display: none;
+  }
+
   .button-shop-now button{
     color: #f2f2f2;
     border-color: #f2f2f2;
@@ -322,13 +326,13 @@ nav.sticky{
     background-color: #96d27b;
   }
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 576px){
     .body-text{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding-top: 45%;
+        padding-top: 38%;
         color: #fff;    
       }
     
@@ -346,25 +350,15 @@ nav.sticky{
         font-weight: 300;
         font-size: 16pt
       }
+
+      .content-1{
+        margin-top: 20%;
+      }
   }
 
-  @media only screen and (min-width: 1000px) {
-    .nav-links li a{
-        color: #f2f2f2;
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: 500;
-        padding: 20px 15px;
-        border-radius: 5px;
-        transition: all 0.3s ease;
-      }
-
-      nav ul li{
-        padding-top: 3em;
-      }
-
-      nav ul li i{
-        font-size: 22pt;
+  @media only screen and (min-width: 768px) {
+    body{
+        background-image: url("/images/tablet-background.png");
     }
 
     .body-text{
@@ -379,7 +373,7 @@ nav.sticky{
       .body-text .title{
         flex: 1;
         text-align: center;
-        font-size: 40pt;
+        font-size: 30pt;
         font-weight: 500;
         padding: 20px 40px;
       }
@@ -388,11 +382,28 @@ nav.sticky{
         flex: 1;
         text-align: center;
         font-weight: 300;
-        font-size: 20pt
+        font-size: 16pt
       }
+
+      nav .wrapper{
+        position: relative;
+        max-width: 1300px;
+        padding: 10px 0px;
+        height: 70px;
+        line-height: 70px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      
   }
 
-  @media only screen and (min-width: 1300px) {
+  @media only screen and (min-width: 992px) {
+    body{
+        background-image: url("/images/992px-background.png");
+    }
+
     .nav-links li a{
         color: #f2f2f2;
         text-decoration: none;
@@ -402,9 +413,9 @@ nav.sticky{
         border-radius: 5px;
         transition: all 0.3s ease;
       }
-      
+
       nav ul li{
-        padding-top: 3em;
+        padding-top: 1em;
       }
 
       nav ul li i{
@@ -436,8 +447,60 @@ nav.sticky{
       }
   }
 
+  @media only screen and (min-width: 1200px) {
+    body{
+        background-image: url("/images/1200px-background.png");
+    }
 
-  @media only screen and (min-width: 1500px) {
+    .nav-links li a{
+        color: #f2f2f2;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 20px 15px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+      }
+      
+      nav ul li{
+        padding-top: 1em;
+      }
+
+      nav ul li i{
+        font-size: 22pt;
+    }
+
+    .body-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 23%;
+        color: #fff;    
+      }
+    
+      .body-text .title{
+        flex: 1;
+        text-align: center;
+        font-size: 40pt;
+        font-weight: 500;
+        padding: 20px 40px;
+      }
+    
+      .body-text .sub-title{
+        flex: 1;
+        text-align: center;
+        font-weight: 300;
+        font-size: 20pt
+      }
+  }
+
+
+  @media only screen and (min-width: 1400px) {
+    body{
+        background-image: url("/images/1400px-background.png")
+    }
+
     .body-text{
         display: flex;
         justify-content: center;
@@ -448,7 +511,7 @@ nav.sticky{
       }
     
       nav ul li{
-        padding-top: 3em;
+        padding-top: 1em;
       }
 
       nav ul li i{
@@ -472,6 +535,10 @@ nav.sticky{
   }
 
   @media only screen and (min-width: 1920px) {
+    body{
+        background-image: url("/images/1920px-background.png");
+    }
+
     .nav-links li a{
         color: #f2f2f2;
         text-decoration: none;
@@ -492,7 +559,7 @@ nav.sticky{
       }
 
       nav ul li{
-        padding-top: 3em;
+        padding-top: 1em;
       }
 
       nav ul li i{
@@ -521,7 +588,7 @@ nav.sticky{
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 50%;
+    margin-top:60%;
     padding: 20px 40px;
   }
 
@@ -564,13 +631,17 @@ nav.sticky{
   }
 
   @media only screen and (min-width: 768px) {
+    .content-1{
+        display: block;
+    }
+
     .container{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         width: 100%;
-        margin-top: 60%;
+        margin-top: 40%;
         padding: 20px 40px;
       }
 
@@ -583,14 +654,14 @@ nav.sticky{
       }
   }
   
-  @media only screen and (min-width: 1000px) {
+  @media only screen and (min-width: 992px) {
     .container{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         width: 100%;
-        margin-top: 45%;
+        margin-top: 22%;
         padding: 20px 40px;
       }
 
@@ -603,16 +674,25 @@ nav.sticky{
       }
   }
 
-  @media only screen and (min-width: 1300px) {
+  @media only screen and (min-width: 1200px) {
     .container{
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         width: 100%;
-        margin-top: 38%;
+        margin-top: 23%;
         padding: 10px 40px;
       }
+
+      .content-1{
+        margin-left: 10%;
+     }
+
+     .complex-container{
+        margin-left: 5%;
+        margin-top: 10%;
+     }
 
       .content-2{
         font-size: 40pt;
@@ -636,21 +716,21 @@ nav.sticky{
       }
   }
 
-  @media only screen and (min-width: 1300px) {
+  @media only screen and (min-width: 1400px) {
     .container{
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         width: 100%;
-        margin-top: 35%;
+        margin-top: 15%;
         padding: 10px 40px;
       }
 
       .content-2{
         font-size: 40pt;
         text-align: left;
-        padding: 20px 40px;
+        padding: 0px 40px;
       }
 
       .content-3{
@@ -677,7 +757,7 @@ nav.sticky{
         align-items: center;
         justify-content: center;
         width: 100%;
-        margin-top: 27%;
+        margin-top: 13%;
         padding: 10px 40px;
       }
 
