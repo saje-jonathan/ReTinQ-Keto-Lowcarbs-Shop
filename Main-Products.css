@@ -15,8 +15,8 @@ nav{
   position: fixed;
   z-index: 99;
   width: 100%;
-  background-color: #fff;
-    box-shadow: 0 5px 5px #bababa;
+  background-color: #379E18;
+    box-shadow: 0 7px 7px #bababa;
   
   height: 12%;
 }
@@ -41,7 +41,7 @@ nav .wrapper{
   list-style: none;
 }
 .nav-links li a{
-  color: #000000;
+  color: #fff;
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
@@ -59,17 +59,17 @@ nav .wrapper{
 .nav-links li:hover .drop-menu,
 .nav-links li:hover .mega-box{
   transition: all 0.3s ease;
-  top: 100px;
+  top: 95px;
   opacity: 1;
   visibility: visible;
 }
 
 .mega-box{
   position: absolute;
-  left: 0;
-  width: 100%;
+  left: -11%;
+  width:1500px;
   padding: 0 30px;
-  top: 125px;
+  top: 80px;
   opacity: 0;
   visibility: hidden;
 }
