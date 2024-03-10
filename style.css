@@ -7,7 +7,7 @@
 }
 
 body{
-    background-image: url("/images/mobile-background.png");
+    background-image: url("/images/background-image.png");
     font-family: "Poppins", sans-serif;
     background-repeat: no-repeat;
     height: 100vh;
@@ -326,6 +326,12 @@ nav.sticky{
     background-color: #96d27b;
   }
 
+  @media only screen and (min-width:375px){
+    body{
+      background-image: url("/images/mobile-background.png");
+    }
+  }
+
   @media only screen and (min-width: 576px){
     .body-text{
         display: flex;
@@ -358,9 +364,9 @@ nav.sticky{
 
   @media only screen and (min-width: 768px) {
     body{
-        background-image: url("/images/tablet-background.png");
-    }
-
+      background-image: url("/images/1920px-background.png");
+  }
+  
     .body-text{
         display: flex;
         justify-content: center;
@@ -400,9 +406,7 @@ nav.sticky{
   }
 
   @media only screen and (min-width: 992px) {
-    body{
-        background-image: url("/images/992px-background.png");
-    }
+
 
     .nav-links li a{
         color: #f2f2f2;
@@ -448,10 +452,6 @@ nav.sticky{
   }
 
   @media only screen and (min-width: 1200px) {
-    body{
-        background-image: url("/images/1200px-background.png");
-    }
-
     .nav-links li a{
         color: #f2f2f2;
         text-decoration: none;
@@ -497,10 +497,6 @@ nav.sticky{
 
 
   @media only screen and (min-width: 1400px) {
-    body{
-        background-image: url("/images/1400px-background.png")
-    }
-
     .body-text{
         display: flex;
         justify-content: center;
@@ -535,9 +531,7 @@ nav.sticky{
   }
 
   @media only screen and (min-width: 1920px) {
-    body{
-        background-image: url("/images/1920px-background.png");
-    }
+
 
     .nav-links li a{
         color: #f2f2f2;
