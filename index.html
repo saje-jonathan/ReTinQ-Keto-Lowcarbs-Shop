@@ -87,6 +87,7 @@
       </div>
 
       <div class="container-2">
+          <div class="content">ReTinQ Keto Shop</div>
         <div id="slider-1" class="owl-carousel">
           <div  class="carousel-content"> <img src="images/1.jpg"></div>
           <div class="carousel-content"> <img src="images/2.jpg"> </div>
@@ -113,8 +114,24 @@
     loop:true,
     autoplay:true,
     autoplayTimeout:2500,
-    
+    responsive : {
+    // breakpoint from 0 up
+    0 : {
+        items:1,
+        nav:true,
+    },
+    // breakpoint from 480 up
+    600 : {
+       items:2,
+          },
+    // breakpoint from 768 up
+    1000 : {
+        items:4,
+    }
+}
   });
-});</script>
+});
+</script>
+
 </body>
 </html>
