@@ -328,7 +328,7 @@ nav.sticky{
 
   @media only screen and (min-width:375px){
     body{
-      background-image: url("/images/mobile-background.png");
+      background-image: url("images/mobile-background.png");
     }
   }
 
@@ -364,7 +364,7 @@ nav.sticky{
 
   @media only screen and (min-width: 768px) {
     body{
-      background-image: url("/images/1920px-background.png");
+      background-image: url("images/1920px-background.png");
   }
 
     .body-text{
