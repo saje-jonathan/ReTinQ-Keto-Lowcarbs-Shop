@@ -1,0 +1,102 @@
+<html>
+    <!DOCTYPE HTML>
+<HTML>
+    <Head>
+        <meta name="viewport" content="width=device-width , intial scale=1.0">
+        <title>About Page</title>
+        <link rel="stylesheet" href="about-page.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+        <link href = "https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400" rel="stylesheet">
+    </Head>
+    <body>
+        <img src="images\bgpic.png" alt="">
+        <div class="header">
+            <nav>
+                <div class="wrapper">
+                  <div class="logo"><a href="Home.html"><img src="images\logo.png" > </a></div> 
+                  <input type="radio" name="slider" id="menu-btn">
+                  <input type="radio" name="slider" id="close-btn">
+                  <ul class="nav-links">
+                    <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                    <li><a href="Home.html">home</a></li>
+                    <li>
+                      <a href="#" class="desktop-item">shop</a>
+                      <input type="checkbox" id="showMega">
+                      <label for="showMega" class="mobile-item">shop</label>
+                      <div class="mega-box">
+                        <div class="content">
+                          <div class="row">
+                            <img src="img.jpg" alt="">
+                          </div>
+                          <div class="row">
+                            <header>Design Services</header>
+                            <ul class="mega-links">
+                              <li><a href="#">Graphics</a></li>
+                              <li><a href="#">Vectors</a></li>
+                              <li><a href="#">Business cards</a></li>
+                              <li><a href="#">Custom logo</a></li>
+                            </ul>
+                          </div>
+                          <div class="row">
+                            <header>Email Services</header>
+                            <ul class="mega-links">
+                              <li><a href="#">Personal Email</a></li>
+                              <li><a href="#">Business Email</a></li>
+                              <li><a href="#">Mobile Email</a></li>
+                              <li><a href="#">Web Marketing</a></li>
+                            </ul>
+                          </div>
+                          <div class="row">
+                            <header>Security services</header>
+                            <ul class="mega-links">
+                              <li><a href="#">Site Seal</a></li>
+                              <li><a href="#">VPS Hosting</a></li>
+                              <li><a href="#">Privacy Seal</a></li>
+                              <li><a href="#">Website design</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">contact</a></li>
+                  </ul>
+                  <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+                </div>
+              </nav>
+
+              <div class="about">
+                <div class="main">
+                    <div class="about-text">
+                        <h1>About us:</h1>
+    
+                        <h2 clas>RETINQ KETO SHOP</h2>
+    
+                        <h4>We offer a wide range of keto and low-carb supplies from meals, essentials, pastries, drinks and frozen goods. <br><br>
+    
+                            You may stay and enjoy your goodies here, too. We have a few tables available. <br><br>
+                            
+                            Come and visit us. Enjoy eating out without the compromise. All items on the menu are definitely in! <br><br>
+                            
+                            Thank you so much for shopping with us!</h4>
+    
+                            <button type="button" class="button">SHOP NOW</button>
+
+                            <divp class="OP">
+                              <img src="css pics/wifepic.jpg">
+                              
+                            </div>
+                </div>
+                </div>
+              </div>
+        </div>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function(){
+                var header = document.querySelector("nav");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            })
+        </script>
+    </body>             
+</HTML>
+</html>
